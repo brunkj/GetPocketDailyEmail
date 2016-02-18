@@ -1,0 +1,1 @@
+curl -H "Content-Type: application/json" -X POST -d '{"consumer_key":"your-consumerkey","access_token":"your-access_token","state":"unread","detailType":"complete"}' https://getpocket.com/v3/get  > /root/getpocket
