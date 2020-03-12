@@ -11,17 +11,17 @@ with open('/root/getpocket') as data_file:
 item_dict = data
 a = random.choice(item_dict['list'].keys())
 
-fromaddr = 'jason.brunk@gmail.com'
-toaddrs  = 'jason.brunk@gmail.com'
+fromaddr = ''
+toaddrs  = ''
 msg = "\r\n".join([
-  "From: jason.brunk@gmail.com",
-  "To: jason.brunk@gmail.com",
+  "From: ",
+  "To: ",
   "Subject: " + item_dict["list"][a]["resolved_title"],
   "",
   item_dict["list"][a]["excerpt"] + "\n\n\nhttps://getpocket.com/beta/read/" + a
   ])
 username = 'jason.brunk@gmail.com'
-password = 'Love2Stacy%^'
+password = ''
 server = smtplib.SMTP('smtp.gmail.com:587')
 server.ehlo()
 server.starttls()
