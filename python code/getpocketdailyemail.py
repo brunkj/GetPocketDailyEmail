@@ -20,7 +20,7 @@ msg = "\r\n".join([
   "",
   item_dict["list"][a]["excerpt"] + "\n\n\nhttps://getpocket.com/beta/read/" + a
   ])
-username = 'jason.brunk@gmail.com'
+username = ''
 password = ''
 server = smtplib.SMTP('smtp.gmail.com:587')
 server.ehlo()
